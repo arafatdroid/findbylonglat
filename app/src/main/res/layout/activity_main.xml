@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Insert Longitude and Latitude"
+        android:id="@+id/tv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et1"
+        android:layout_below="@+id/tv"
+        android:layout_alignLeft="@+id/tv"
+        android:layout_alignStart="@+id/tv"
+        android:layout_marginTop="73dp"
+        android:layout_alignRight="@+id/tv"
+        android:layout_alignEnd="@+id/tv" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/et1"
+        android:layout_alignStart="@+id/et1"
+        android:layout_alignRight="@+id/et1"
+        android:layout_alignEnd="@+id/et1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to the MAP"
+        android:id="@+id/btn"
+        android:layout_below="@+id/et2"
+        android:layout_alignLeft="@+id/et2"
+        android:layout_alignStart="@+id/et2"
+        android:layout_marginTop="73dp" />
+
+
+</RelativeLayout>
